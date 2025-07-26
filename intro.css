@@ -1,0 +1,90 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Segoe UI', sans-serif;
+}
+
+body, html {
+  height: 100%;
+  width: 100%;
+  overflow: hidden;
+  background: linear-gradient(135deg, #111, #444);
+}
+
+.intro-container {
+  position: relative;
+  height: 100vh;
+  width: 100%;
+  background: url('images/first1.jpg') no-repeat center center/cover;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  color: white;
+  text-shadow: 2px 2px 8px rgba(0, 0, 0, 0.8);
+}
+
+.bg-overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  background: rgba(0, 0, 0, 0.6);
+  z-index: 1;
+}
+
+.company-name {
+  font-size: 4rem;
+  font-weight: bold;
+  z-index: 2;
+  animation: glow 2s ease-in-out infinite alternate;
+  letter-spacing: 3px;
+}
+
+.tagline {
+  z-index: 2;
+  margin-top: 20px;
+  font-size: 1.5rem;
+  animation: fadeIn 3s ease-in-out;
+}
+
+button {
+  z-index: 2;
+  margin-top: 40px;
+  padding: 15px 30px;
+  font-size: 1.1rem;
+  border: none;
+  background:  #0059b3;
+  color: black;
+  cursor: pointer;
+  border-radius: 30px;
+  transition: all 0.4s;
+}
+
+button:hover {
+  background: white;
+  color: black;
+  transform: scale(1.1);
+}
+
+@keyframes glow {
+  from {
+    text-shadow: 0 0 10px  #003366, 0 0 20px #0059b3, 0 0 30px  #003366;
+  }
+  to {
+    text-shadow: 0 0 20px  #003366, 0 0 30px #0059b3, 0 0 40px  #003366;
+  }
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(30px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}

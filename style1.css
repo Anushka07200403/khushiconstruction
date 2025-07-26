@@ -1,0 +1,90 @@
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+}
+
+header {
+  background-color: #003366;
+  color: white;
+  padding: 20px;
+  text-align: center;
+}
+
+nav a {
+  color: white;
+  margin: 0 15px;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+.about-section, .contact-section {
+  padding: 40px;
+  background-color: #f9f9f9;
+}
+
+.about-section h2,
+.contact-section h2 {
+  color: #003366;
+}
+
+.contact-info p {
+  margin: 10px 0;
+}
+
+.contact-form {
+  margin-top: 20px;
+}
+
+.contact-form input, 
+.contact-form textarea {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 15px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+
+.contact-form button {
+  background-color: #003366;
+  color: white;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+.about-content, .contact-container {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 30px;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.about-image img, .contact-image img {
+  width: 100%;
+  max-width: 500px;
+  height: auto;
+  border-radius: 10px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+}
+
+.about-text, .contact-form-area {
+  flex: 1 1 50%;
+  min-width: 280px;
+}
+
+.about-image, .contact-image {
+  flex: 1 1 40%;
+  min-width: 280px;
+}
+
+footer {
+  background-color: #003366;
+  color: white;
+  text-align: center;
+  padding: 15px;
+  position: relative;
+  bottom: 0;
+  width: 100%;
+}

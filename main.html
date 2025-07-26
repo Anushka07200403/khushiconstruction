@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Khushi Construction</title>
+    <link rel="stylesheet" href="css/style.css">
+    <style>
+        .slider {
+  position: relative;
+  width: 100%;
+  height: 400px;
+  overflow: hidden;
+}
+
+.slides {
+  display: flex;
+  width: 100%;
+  height: 100%;
+  transition: transform 1s ease-in-out;
+}
+
+.slide {
+  min-width: 100%;
+  height: 100%;
+  position: relative;
+}
+
+.slide img {
+  width: 100%;
+  height: 120%;
+  background-size: cover;
+}
+
+/* .overlay-text {
+  position: absolute;
+  bottom: 30px;
+  left: 40px;
+  font-size: 2rem;
+  color: #fff;
+  background-color: rgba(0, 0, 0, 0.6);
+  padding: 10px 20px;
+  border-radius: 5px; */
+
+ .section-title {
+    text-align: center;
+    font-size: 26px;
+    margin-top: 40px;
+    color: #003366;
+}
+
+.service-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 20px;
+    padding: 30px;
+    max-width: 1000px;
+    margin: auto;
+}
+
+.service-container a {
+    background-color: #f8f9fa;
+    border: 2px solid #0077cc;
+    color: #003366;
+    font-size: 18px;
+    font-weight: bold;
+    text-decoration: none;
+    padding: 20px;
+    border-radius: 10px;
+    text-align: center;
+    transition: all 0.3s ease;
+}
+
+.service-container a:hover {
+    background-color: #0077cc;
+    color: white;
+    transform: scale(1.05);
+    box-shadow: 0 6px 15px rgba(0, 0, 0, 0.2);
+}
+    </style>
+</head>
+<body>
+    <header>
+  <h1>Khushi Construction</h1>
+  <p>📞 Contact us today to build these sustainable, long-lasting structures with expert craftsmanship.
+📍 Serving across Maharashtra, Gujarat, and India</p>
+<p>📱 Satish Jadhav – 8087818681</p>
+  <nav>
+    <a href="index.html">Home</a> |
+    <a href="about.html">About Us</a> |
+    <a href="contact.html">Contact Us</a>
+  </nav>
+</header>
+    <section class="slider">
+  <div class="slides">
+    <div class="slide active">
+      <img src="images/worker7.jpg" alt="Gabion Wall">
+      <div class="overlay-text"></div>
+    </div>
+    <div class="slide">
+      <img src="images/worker8.webp" alt="Rock Fill Dam">
+      <div class="overlay-text"></div>
+    </div>
+    <div class="slide">
+      <img src="images/worker4.webp" alt="Check Dam">
+      <div class="overlay-text"></div>
+    </div>
+    <!-- Add more slides as needed -->
+  </div>
+</section>
+    <h2 class="section-title">Our Services</h2>
+<div class="service-container">
+  <!--<a href="services/gabion_structure.html">🧱 Gabion Structure</a>-->
+      <a href="services/compoundwall.html">🏗Compound Wall</a>
+  <a href="services/gabion_core_wall.html">🧱 Gabion Core Wall</a>
+    <!--<a href="services/loose_border_structure.html">📏 Loose Border Structure (LBS)</a>-->
+  <a href="services/check_dam.html">🚧 Check Dam</a>
+  <a href="services/rock_fill_dam.html">🌊 Rock Fill Dam (RFD)</a>
+  <a href="services/earthen_nala_band.html">🌱 Earthen Nala Band</a>
+  <a href="services/stone_pitching.html">🪨 Stone Pitching</a>
+ <!--<a href="services/pond_desilting_cct.html">💧 Pond Desilting & CCT</a>-->
+</div>
+    <script src="js/script.js"></script>
+</body>
+</html>
